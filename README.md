@@ -1,13 +1,14 @@
-<img src="https://raw.githubusercontent.com/google/cadvisor/master/logo.png">  
+<img src="https://raw.githubusercontent.com/google/cadvisor/master/logo.png" width=600>  
 
 ----
 # Intro
-此開源工具可用於監控Container效能，以利於效能優化以及維護。  
-本工具使用docker包裝，使用前請先確認系統已安裝docker
-  
-  
-# How to use
-- Install  
+
+cAdvisor 是 Google 開源的一款用於展示和分析容器運行狀態的可視化工具。
+通過在主機上運行 cAdvisor 用戶可以輕松的獲取到當前主機上容器的運行統計信息，並以圖表的形式向用戶展示。
+此開源工具可用於監控Container效能，以利於效能優化以及維護。
+
+# 使用方法：
+### 安裝
 ```
 sudo docker run \
   --volume=/:/rootfs:ro \
@@ -22,5 +23,14 @@ sudo docker run \
   --device=/dev/kmsg \
   gcr.io/cadvisor/cadvisor:latest
 ```
-- Use  
-根據上述指令所建立之環境，container build起來後，可於localhost:8080看見監控頁面
+### 完成:
+- 根據上述設置後，可在 localhost:8080 看見此監控頁面  
+
+![image.png](cAdvisor/1.png)
+![image.png](cAdvisor/2.png)
+![image.png](cAdvisor/3.png)
+![image.png](cAdvisor/4.png)
+----
+# 參考文件
+- https://github.com/google/cadvisor
+- https://sectools.tw/docker-monitor/
