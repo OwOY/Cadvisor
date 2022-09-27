@@ -1,4 +1,4 @@
-<img src="https://raw.githubusercontent.com/google/cadvisor/master/logo.png" width=600>  
+<img src="https://raw.githubusercontent.com/google/cadvisor/master/logo.png" height=350 width=1100>  
 
 ----
 # Intro
